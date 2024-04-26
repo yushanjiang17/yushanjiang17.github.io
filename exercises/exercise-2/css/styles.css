@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: hsl(30, 40%, 94%);
+    max-width: 800px;
+    margin: auto;
+    
+}
+main{
+    background-color: floralwhite;
+}
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: darkblue;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    padding: 20px;
+
+    border: 2px solid goldenrod;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+
+}
+
+
+
+.intro {
+    color: rgb(73, 152, 184);
+    width: 50%;
+
+}
