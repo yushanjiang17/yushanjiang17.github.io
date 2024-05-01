@@ -1,0 +1,39 @@
+body {
+    color: #0f6fff;
+    font-family: monospace;
+}
+.column {
+    margin: 0 0 0;
+    padding: 0;
+}
+
+
+.column div {
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+
+figure {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #f4efdd;
+    overflow: hidden;
+}
+
+.hover01 figure img {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
