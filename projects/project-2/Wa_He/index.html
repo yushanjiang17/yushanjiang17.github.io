@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="chuang.css">
 </head>
+
 <body>
-    <h4>瓦和 —— 草东没有派对 No Party for Cao Dong</h4>
-    <ol>
-        <li>苦难精算师</li>
-        <li>缸</li>
-        <li>空</li>
-        <li>人洞山</li>
-        <li>孑</li>
-        <li>白日梦</li>
-        <li><a href="chuang/index.html">床</a></li>
-        <li>八</li>
-        <li>老张</li>
-        <li>芽</li>
-        <li>但</li>
-    </ol>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h4> 瓦和 THE CLOD</h4>
+            <h4> No Party For Cao Dong second studio album, released in May, 2023.</h4>
+            <h4>((⬇click to play⬇))</h4>
+    
+    <div class="container">
+        <img id="img_chuang" class="img" src="The_Clod.jpeg">
+        <audio id="audio_chuang" src="chuang-lie-official-lyric-video copy.mp3"></audio>
+                <!-- <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var audio_chuang = document.getElementById("audio_chuang");
+                        var img_chuang = document.getElementById("img_chuang");
+
+                        function play_chuang() {
+                            audio_chuang.play();
+                        }
+
+                        function stop_chuang() {
+                            audio_chuang.pause();
+                        }
+
+                        img_chuang.addEventListener('click', play_chuang);
+                        img_chuang.addEventListener('mouseover', play_chuang);
+                        img_chuang.addEventListener('mouseout', stop_chuang);
+                        
+                    });
+                </script> -->
+
+        <div id="overlay" class="overlay">
+            <audio id="audio_chuang" src="chuang-lie-official-lyric-video copy.mp3"></audio>
+            <script>
+               
+                        var audio_chuang = document.getElementById("audio_chuang");
+                        var overlay = document.getElementById("overlay");
+
+                        function play_chuang() {
+                            audio_chuang.play();
+                        }
+
+                        function stop_chuang() {
+                            audio_chuang.pause();
+                        }
+
+                        overlay.addEventListener('click', play_chuang);
+                        overlay.addEventListener('mouseover', play_chuang);
+                        overlay.addEventListener('mouseout', stop_chuang);
+                        
+                
+            </script>
+            <div class="text">
+                <h4>床 Lie</h4>
+                
+                <p>Gazing at the light out the windows</p>
+                <p>Is it the sunshine or lamppost</p>
+                <p>Painstakingly searching my body for a wound that makes sense</p>
+                <p>Yet found no real defense</p>
+                
+                <p>Built a wall to keep joy out</p>
+                <p>No note changes the hook’s sound</p>
+                <p>Since when did the longing to break apart</p>
+                <p>Load up the whole heart</p>
+            </div>
+        </div>
+
+    </div>
+            
+           
+        </div>
+        <div class="grid-item">
+            <ol>
+                <li>苦难精算师 Intro</li>
+                <li>缸 Pool</li>
+                <li>空 Space</li>
+                <li>人洞山 The Human, the Hole and the Mountain</li>
+                <li>孑 Interlude</li>
+                <li>白日梦 Daydream</li>
+                <li><a href="chuang/index.html">床 Lie</a></li>
+                <li>八 B</li>
+                <li>老张 Chang</li>
+                <li>芽 Shoot</li>
+                <li>但 Damn</li>
+            </ol>
+        </div>
+     </div>
 </body>
+
 </html>
