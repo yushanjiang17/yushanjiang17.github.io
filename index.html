@@ -4,14 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yushan Jiang</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        #chameleon {
+            transition: filter 0.5s ease;
+        }
+    </style>
+
 </head>
 
 <body>
+    <img id="chameleon" src="image/chameleon.png" alt="Chameleon" width="300">
+    <!-- <script src="js/sketch.js"></script> -->
+    <script>
+        const chameleon = document.getElementById('chameleon');
+
+        chameleon.addEventListener('mousemove', function (event) {
+            const rect = chameleon.getBoundingClientRect();
+            const x = event.clientX - rect.left; // x position within the element.
+            const width = rect.width;
+            const hueRotateDegree = (x / width) * 360; // Rotate hue based on mouse x position.
+
+            chameleon.style.filter = `hue-rotate(${hueRotateDegree}deg)`;
+        });
+
+        chameleon.addEventListener('mouseleave', function () {
+            chameleon.style.filter = ''; // Reset filter when mouse leaves the image.
+        });
+    </script>
+
     <!-- comment-->
-    <h1>Hello worldsss!</h1>
+    <!-- <h1>Hello worldsss!</h1>
     <a href="exercises/index.html">Exercises</a>
-    <a href="projects/index.html">Projects</a>
+    <a href="projects/index.html">Projects</a> -->
+    <ul>
+        <li><a href="projects/project-1/index.html">Project 1</a></li>
+        <li><a href="projects/project-2/index.html">Project 2</a></li>
+        <li><a href="projects/project-3/index.html">Project 3</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="exercises/exercise-1/index.html">Exercise 1</a></li>
+        <li><a href="exercises/exercise-2/index.html">Exercise 2</a></li>
+        <li><a href="exercises/exercise-3/index.html">Exercise 3</a></li>
+        <li><a href="exercises/exercise-4/index.html">Exercise 4</a></li>
+    </ul>
+
+    
+
 
 
     <!-- <h2>sfjhs</h2>
